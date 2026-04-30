@@ -13,11 +13,11 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions
+        uses: actions/checkout@v3
 
       - name: Print Messages 
-        uses: echo "pipeline run successfully"
+        run: echo "pipeline run successfully"
 
       - name: show files
-        uses: ls -l
+        run: ls -l
 
