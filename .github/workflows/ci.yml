@@ -1,0 +1,23 @@
+name: my first cicd pipeline
+
+on:
+  push:
+      branches:
+        - main
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+
+    steps:
+      - name: Checkout code
+        uses: actions
+
+      - name: Print Messages 
+        uses: echo "pipeline run successfully"
+
+      - name: show files
+        uses: ls -l
+
